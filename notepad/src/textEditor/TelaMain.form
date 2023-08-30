@@ -76,7 +76,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="btnDarkMode" min="-2" pref="150" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jComboBoxCase" min="-2" pref="109" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jComboBoxStyles" min="-2" pref="109" max="-2" attributes="0"/>
@@ -188,7 +188,7 @@
               <Font name="JetBrains Mono" size="14" style="0"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon/bullet_disk.png"/>
+              <Image iconType="3" name="/icon/script_save.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Save File"/>
           </Properties>
@@ -248,6 +248,9 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="JetBrains Mono" size="14" style="0"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icon/color_wheel.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Text Color"/>
           </Properties>

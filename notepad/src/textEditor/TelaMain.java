@@ -76,7 +76,7 @@ public class TelaMain extends javax.swing.JFrame {
         });
 
         btnSaveFile.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
-        btnSaveFile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/bullet_disk.png"))); // NOI18N
+        btnSaveFile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/script_save.png"))); // NOI18N
         btnSaveFile.setText("Save File");
         btnSaveFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,6 +107,7 @@ public class TelaMain extends javax.swing.JFrame {
         });
 
         btnTextColor.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
+        btnTextColor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/color_wheel.png"))); // NOI18N
         btnTextColor.setText("Text Color");
         btnTextColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +146,7 @@ public class TelaMain extends javax.swing.JFrame {
                 .addGroup(panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMainLayout.createSequentialGroup()
                         .addComponent(btnDarkMode, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jComboBoxCase, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBoxStyles, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)

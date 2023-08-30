@@ -38,6 +38,7 @@ public class TelaMain extends javax.swing.JFrame {
         btnTextColor = new javax.swing.JButton();
         btnDarkMode = new javax.swing.JButton();
         jComboBoxCase = new javax.swing.JComboBox<>();
+        jComboBoxStyles = new javax.swing.JComboBox<>();
         menuMain = new javax.swing.JMenuBar();
         menuFile = new javax.swing.JMenu();
         menuAbout = new javax.swing.JMenu();
@@ -128,6 +129,13 @@ public class TelaMain extends javax.swing.JFrame {
             }
         });
 
+        jComboBoxStyles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Italic", "Bold" }));
+        jComboBoxStyles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxStylesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelMainLayout = new javax.swing.GroupLayout(panelMain);
         panelMain.setLayout(panelMainLayout);
         panelMainLayout.setHorizontalGroup(
@@ -139,6 +147,8 @@ public class TelaMain extends javax.swing.JFrame {
                         .addComponent(btnDarkMode, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBoxCase, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxStyles, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(labelCaracteres, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1)
@@ -177,7 +187,8 @@ public class TelaMain extends javax.swing.JFrame {
                 .addGroup(panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelCaracteres)
                     .addComponent(btnDarkMode)
-                    .addComponent(jComboBoxCase, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxCase, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxStyles, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13))
         );
 
@@ -284,6 +295,17 @@ public class TelaMain extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jComboBoxCaseActionPerformed
 
+    private void jComboBoxStylesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxStylesActionPerformed
+        String a = jComboBoxStyles.getSelectedItem().toString();
+        
+        if(a.equals("Italic")){
+            txtMain.setFont(new Font(comboFont.getSelectedItem().toString(),Font.ITALIC,txtMain.getFont().getSize()));
+        }
+        else{
+            txtMain.setFont(new Font(comboFont.getSelectedItem().toString(),Font.BOLD,txtMain.getFont().getSize()));
+        }
+    }//GEN-LAST:event_jComboBoxStylesActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -317,6 +339,7 @@ public class TelaMain extends javax.swing.JFrame {
     private javax.swing.JButton btnTextColor;
     private javax.swing.JComboBox<String> comboFont;
     private javax.swing.JComboBox<String> jComboBoxCase;
+    private javax.swing.JComboBox<String> jComboBoxStyles;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel labelCaracteres;
